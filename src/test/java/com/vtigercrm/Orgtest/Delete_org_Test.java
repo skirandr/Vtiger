@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.vtigercrm.genericutils.Actions_lib;
 import com.vtigercrm.genericutils.Excel_lib;
 import com.vtigercrm.genericutils.File_lib;
 import com.vtigercrm.genericutils.WebDriver_utils;
@@ -17,7 +18,7 @@ import com.vtigercrm.genericutils.WebDriver_utils;
  * @author shashi
  *
  */
-public class Delete_org_test {
+public class Delete_org_Test {
 
 	@Test
 	public void Delete_org() throws Throwable {
@@ -55,7 +56,7 @@ public class Delete_org_test {
 		driver.findElement(By.name("user_name")).sendKeys(USERNAME);
 		driver.findElement(By.name("user_password")).sendKeys(PASSWORD);
 		driver.findElement(By.id("submitButton")).click();
-
+  
 		/* step3 - navigate to organisation page */
 		driver.findElement(By.linkText("Organizations")).click();
 
@@ -86,6 +87,11 @@ public class Delete_org_test {
 			Assert.fail();
 		}
 
+		/*steo 8 : logout*/
+		WebElement we1 = driver.findElement(By.xpath("//img[@src= 'themes/softed/images/user.PNG' ]"));
+		Actions_lib.find_element(we1, driver);
+		driver.findElement(By.linkText("Sign Out")).click();
+		
 	}
 
 }

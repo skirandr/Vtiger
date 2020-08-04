@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.vtigercrm.Orgtest.Delete_org_test">
+      <class name="com.vtigercrm.Orgtest.Delete_org_Test">
         <methods>
           <include name="Delete_org"/>
         </methods>
-      </class> <!-- com.vtigercrm.Orgtest.Delete_org_test -->
+      </class> <!-- com.vtigercrm.Orgtest.Delete_org_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
