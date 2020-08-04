@@ -18,7 +18,7 @@ import com.vtigercrm.genericutils.WebDriver_utils;
  * @author shashi
  *
  */
-public class Delete_org_Test {
+public class Delete_orgTest {
 
 	@Test
 	public void Delete_org() throws Throwable {

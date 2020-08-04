@@ -15,7 +15,7 @@ import com.vtigercrm.genericutils.Actions_lib;
 import com.vtigercrm.genericutils.Dropdown_lib;
 import com.vtigercrm.genericutils.File_lib;
 
-public class Create_org_test {
+public class Create_orgTest {
 
 	@Test
 	public void create_org() throws IOException {
